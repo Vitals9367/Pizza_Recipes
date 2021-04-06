@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>Pizzeria Menu</title>
+
+</head>
+<body>
+    <div class="navbar">
+            <h3 class="logo">Pizzeria Recipes</h3>
+        <button type="button" class="nav-add-btn" id="nav-add-btn" >New Pizza</button>
+    </div>
+    <div class="under-nav">
+            <h5>Sort by</h5>
+            <select name="sort" id="sort">
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+                <option value="heat">Heat</option>
+            </select>
+    </div>
+    <div class="main-section" id="main">
+
+    </div>
+        <div class="overlay" id="overlay">
+            <form class="add-form" id="add-form" action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" maxlength="30">
+
+                <label for="price">Price</label>
+                <input type="number" id="price" min="0" step="0.01">
+
+                <label for="heat">Heat</label>
+                <input type="number" id="heat" name="heat" min="1" max="3">
+                
+                <label for="toppings">Toppings</label>
+                <p style="font-size:0.7rem">pepperoni, supreme ...</p>
+                <input type="text" id="toppings" name="toppings" min="2">
+                
+                <label for="image">Image</label>
+                <select name="image" id="image">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="palermo">Palermo</option>
+                    <option value="saliami">Saliami</option>
+                    <option value="hawaii">Hawaii</option>
+                </select>
+
+                <p class="add-warning" id="add-warning">Warrning</p>
+
+                <input type="button" id="submit-form" value="Save Pizza">
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+            <img id="add-form-img" src="/img/pepperoni.jpg"/>
+        </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
