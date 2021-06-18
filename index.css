@@ -21,6 +21,9 @@ html, body{
     align-items: center;
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.main-section{
+    height: 100%;
+}
 .nav-left-side{
     display: flex;
     flex-direction: row;
@@ -61,7 +64,7 @@ button:focus {
 }
 .overlay{
     z-index: 89;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
